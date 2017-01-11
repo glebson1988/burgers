@@ -1,0 +1,50 @@
+.best {
+	background: url("../../img/bg/best.jpg") 50% no-repeat;
+	background-size: cover;
+	text-align: center;
+
+	.section__title {
+		margin-bottom: 80px;
+	}
+
+	.container {
+		position: relative;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+}
+
+.best__icon {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	display: inline-block;
+}
+
+.best__icon-pic {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.best__list {
+	font-size: 0;
+
+	* {
+		font-size: 14px;
+	}
+}
+
+.best__item {
+	@include inlineblock();
+	width: 33.3%;
+}
+
+.best__title {
+	font-size: 24px;
+	@include lifehack;
+	color: $black;
+	margin-bottom: 20px;
+}
+

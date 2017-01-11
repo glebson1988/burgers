@@ -1,0 +1,85 @@
+
+@font-face {
+  font-family: 'Gagalin-Regular';
+  src: url('../../fonts/Gagalin-Regular.eot?#iefix') format('embedded-opentype'),
+  	   url('../../fonts/Gagalin-Regular.otf')  format('opentype'),
+	   url('../../fonts/Gagalin-Regular.woff') format('woff'),
+	   url('../../fonts/Gagalin-Regular.ttf')  format('truetype'),
+	   url('../../fonts/Gagalin-Regular.svg#Gagalin-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lifehack-Medium';
+  src: url('../../fonts/Lifehack-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/Lifehack-Medium.otf')  format('opentype'),
+	   url('../../fonts/Lifehack-Medium.woff') format('woff'),
+	   url('../../fonts/Lifehack-Medium.ttf')  format('truetype'),
+	   url('../../fonts/Lifehack-Medium.svg#Lifehack-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../../fonts/Ubuntu.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/Ubuntu.woff') format('woff'),
+       url('../../fonts/Ubuntu.ttf')  format('truetype'),
+       url('../../fonts/Ubuntu.svg#Ubuntu') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('../../fonts/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/Ubuntu-Bold.woff') format('woff'),
+       url('../../fonts/Ubuntu-Bold.ttf')  format('truetype'),
+       url('../../fonts/Ubuntu-Bold.svg#Ubuntu-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Ubuntu-Light';
+  src: url('../../fonts/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/Ubuntu-Light.woff') format('woff'),
+       url('../../fonts/Ubuntu-Light.ttf')  format('truetype'),
+       url('../../fonts/Ubuntu-Light.svg#Ubuntu-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu-Medium';
+  src: url('../../fonts/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+       url('../../fonts/Ubuntu-Medium.woff') format('woff'),
+       url('../../fonts/Ubuntu-Medium.ttf')  format('truetype'),
+       url('../../fonts/Ubuntu-Medium.svg#Ubuntu-Medium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@mixin gagalin() {
+	font-family: 'Gagalin-Regular';
+}
+
+@mixin ubuntu($style: light) {
+	@if $style == light {
+		font-family: 'Ubuntu-Light';
+	}
+
+	@if $style == medium {
+		font-family: 'Ubuntu-Medium';
+	}
+
+	@if $style == bold {
+		font-family: 'Ubuntu-Bold';
+	}
+}
+
+@mixin lifehack() {
+	font-family: 'Lifehack-Medium';
+}

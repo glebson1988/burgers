@@ -1,0 +1,22 @@
+//colors
+$orange: #e45028;
+$yellow: #f9b43b;
+$black: #2f3234;
+$red: #e35028;
+
+@import "layout/normalize";
+@import "layout/mixins";
+@import "layout/fonts";
+@import "layout/jquery.fancybox";
+@import "layout/layout";
+@import "layout/common";
+@import "sections/best";
+@import "sections/burgers";
+@import "sections/header";
+@import "sections/hero";
+@import "sections/map";
+@import "sections/menu";
+@import "sections/order";
+@import "sections/popups";
+@import "sections/reviews";
+@import "sections/team";

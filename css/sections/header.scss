@@ -1,0 +1,68 @@
+.header {
+	padding-top: 12px;
+}
+
+.header__logo {
+	float: left;
+	width: 32%;
+}
+
+.header__menu {
+	float: left;
+	width: 68%;
+	padding-top: 13px;
+}
+
+.nav {
+	width: 83%;
+	@include inlineblock(middle);
+}
+
+.order-link {
+	width: 15%;
+	@include inlineblock(middle);
+	padding: 9px 0;
+	margin-left: 1%;
+}
+
+.nav__list {
+	width: 100%;
+	@extend %clearfix;
+}
+
+.nav__item {
+	white-space: nowrap;
+	margin-right: 15px;
+	display: block;
+	float: left;
+
+	&:last-child {
+		margin-right: 0;
+		&:after {
+			display: none;
+		}
+	}
+
+	&:after {
+		content: "";
+		@include inlineblock(middle);
+		width: 4px;
+		height: 4px;
+		border-radius: 50%;
+		background: white;
+		margin-left: 15px;
+	}
+}
+
+.nav__link {
+	@include inlineblock(middle);
+	font-size: 13px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	@include ubuntu(medium);
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
